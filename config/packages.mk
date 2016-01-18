@@ -9,10 +9,7 @@ endif
 PRODUCT_PACKAGES += \
     Apollo \
     MonthCalendarWidget \
-    OpenDelta \
     OmniSwitch \
-    Chromium \
-    OmniJaws
 
 ifneq ($(TARGET_NO_DSPMANAGER), true)
 PRODUCT_PACKAGES += \

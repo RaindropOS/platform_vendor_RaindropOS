@@ -1,17 +1,17 @@
-PRODUCT_BRAND ?= omni
+PRODUCT_BRAND ?= ninjarea51
 
 # use specific resolution for bootanimation
 ifneq ($(TARGET_BOOTANIMATION_SIZE),)
 PRODUCT_COPY_FILES += \
-    vendor/omni/prebuilt/bootanimation/res/$(TARGET_BOOTANIMATION_SIZE).zip:system/media/bootanimation.zip
+    vendor/ninjarea51/prebuilt/bootanimation/res/$(TARGET_BOOTANIMATION_SIZE).zip:system/media/bootanimation.zip
 else
 PRODUCT_COPY_FILES += \
-    vendor/omni/prebuilt/bootanimation/bootanimation.zip:system/media/bootanimation.zip
+    vendor/ninjarea51/prebuilt/bootanimation/bootanimation.zip:system/media/bootanimation.zip
 endif
 
 # default wallpaper
 PRODUCT_COPY_FILES += \
-    vendor/omni/prebuilt/default_wallpaper.jpg:system/media/default_wallpaper.jpg
+    vendor/ninjarea51/prebuilt/default_wallpaper.jpg:system/media/default_wallpaper.jpg
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.config.wallpaper=/system/media/default_wallpaper.jpg
 
@@ -37,23 +37,23 @@ endif
 
 # Backup Tool
 PRODUCT_COPY_FILES += \
-    vendor/omni/prebuilt/bin/backuptool.sh:system/bin/backuptool.sh \
-    vendor/omni/prebuilt/bin/backuptool.functions:system/bin/backuptool.functions \
-    vendor/omni/prebuilt/bin/50-hosts.sh:system/addon.d/50-hosts.sh \
-    vendor/omni/prebuilt/bin/blacklist:system/addon.d/blacklist
+    vendor/ninjarea51/prebuilt/bin/backuptool.sh:system/bin/backuptool.sh \
+    vendor/ninjarea51/prebuilt/bin/backuptool.functions:system/bin/backuptool.functions \
+    vendor/ninjarea51/prebuilt/bin/50-hosts.sh:system/addon.d/50-hosts.sh \
+    vendor/ninjarea51/prebuilt/bin/blacklist:system/addon.d/blacklist
 
 # init.d support
 PRODUCT_COPY_FILES += \
-    vendor/omni/prebuilt/etc/init.d/00banner:system/etc/init.d/00banner \
-    vendor/omni/prebuilt/bin/sysinit:system/bin/sysinit
+    vendor/ninjarea51/prebuilt/etc/init.d/00banner:system/etc/init.d/00banner \
+    vendor/ninjarea51/prebuilt/bin/sysinit:system/bin/sysinit
 
 # userinit support
 PRODUCT_COPY_FILES += \
-    vendor/omni/prebuilt/etc/init.d/90userinit:system/etc/init.d/90userinit
+    vendor/ninjarea51/prebuilt/etc/init.d/90userinit:system/etc/init.d/90userinit
 
-# Init script file with omni extras
+# Init script file with ninjarea51 extras
 PRODUCT_COPY_FILES += \
-    vendor/omni/prebuilt/etc/init.local.rc:root/init.omni.rc
+    vendor/ninjarea51/prebuilt/etc/init.local.rc:root/init.ninjarea51.rc
 
 # Enable SIP and VoIP on all targets
 PRODUCT_COPY_FILES += \
@@ -61,13 +61,13 @@ PRODUCT_COPY_FILES += \
 
 # Dashclock
 #PRODUCT_COPY_FILES += \
-#    vendor/omni/prebuilt/app/DashClock.apk:system/app/DashClock.apk
+#    vendor/ninjarea51/prebuilt/app/DashClock.apk:system/app/DashClock.apk
 
 # Additional packages
--include vendor/omni/config/packages.mk
+-include vendor/ninjarea51/config/packages.mk
 
 # Versioning
--include vendor/omni/config/version.mk
+-include vendor/ninjarea51/config/version.mk
 
 # Add our overlays
-PRODUCT_PACKAGE_OVERLAYS += vendor/omni/overlay/common
+PRODUCT_PACKAGE_OVERLAYS += vendor/ninjarea51/overlay/common
