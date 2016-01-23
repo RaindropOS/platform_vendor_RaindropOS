@@ -1,7 +1,7 @@
 #
 # This policy configuration will be used by all products that
-# inherit from ninjarea51
+# inherit from RaindropOS
 #
 
 BOARD_SEPOLICY_DIRS += \
-    vendor/ninjarea51/sepolicy
+    vendor/raindrop/sepolicy

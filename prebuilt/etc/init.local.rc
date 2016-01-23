@@ -1,4 +1,4 @@
-# ninjarea51 Extras
+# RaindropOS Extras
 
 on init
     export TERMINFO /system/etc/terminfo
