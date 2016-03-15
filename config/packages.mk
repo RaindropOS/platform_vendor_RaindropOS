@@ -11,13 +11,6 @@ PRODUCT_PACKAGES += \
     MonthCalendarWidget \
     OmniSwitch \
 
-ifneq ($(TARGET_NO_DSPMANAGER), true)
-PRODUCT_PACKAGES += \
-    audio_effects.conf \
-    DSPManager \
-    libcyanogen-dsp
-endif
-
 PRODUCT_PACKAGES += \
     CellBroadcastReceiver
 
@@ -39,4 +32,3 @@ PRODUCT_PACKAGES += \
     ntfsfix \
     ntfs-3g \
     mkntfs
-
