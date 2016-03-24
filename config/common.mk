@@ -30,10 +30,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.setupwizard.enterprise_mode=1 \
     persist.sys.root_access=1
 
+#TODO!! Bring this back, before going live
 # enable ADB authentication if not on eng build
-ifneq ($(TARGET_BUILD_VARIANT),eng)
-ADDITIONAL_DEFAULT_PROPERTIES += ro.adb.secure=1
-endif
+# ifneq ($(TARGET_BUILD_VARIANT),eng)
+ADDITIONAL_DEFAULT_PROPERTIES += ro.adb.secure=0
+# endif
 
 # Backup Tool
 PRODUCT_COPY_FILES += \
