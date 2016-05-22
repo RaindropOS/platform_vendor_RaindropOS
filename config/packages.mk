@@ -9,7 +9,7 @@ endif
 PRODUCT_PACKAGES += \
     Apollo \
     MonthCalendarWidget \
-    OmniSwitch \
+    EnhancedIME
 
 PRODUCT_PACKAGES += \
     CellBroadcastReceiver
